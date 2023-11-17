@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Cardápio</title>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3fea478cc3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="caixa">
+      <h1 class="subtitulos">Cardápio</h1>
+      <div class="div_subclasses">
+        <h2 class="subtitulos">Bebidas Alcoólicas</h2>
+        <div class="item produto">
+          <p><i class="fa-solid fa-beer-mug-empty"></i> Cerveja__________R$12,00</p> 
+          <p class="ingredientes">Litrão de Cerveja, Heineken, Budweiser, Skol ou Cerveja Artesanal Local</p>
+          <button class="adicionar" data-nome="Cerveja" data-preco="12.00">Adicionar item</button>
+        </div>
+        <div class="item produto">
+          <p><i class="fa-solid fa-glass-water"></i> Copão de Vodka__________R$25,00</p>
+          <p class="ingredientes">Vodka, Gelo de coco, Red Bull de Melancia, Tropical ou Pêssego</p>
+          <button class="adicionar" data-nome="Vodka" data-preco="25.00">Adicionar item</button>
+                  </div>
+        <div class="item produto">
+          <p><i class="fa-solid fa-whiskey-glass"></i> Copão de Whisky__________R$35,00</p>
+          <p class="ingredientes">Whisky, Gelo de coco e Red Bull sem sabor</p>
+          <button class="adicionar" data-nome="Whisky" data-preco="35.00">Adicionar item</button>
+                  </div>
+        <div class="item produto">
+          <p><i class="fa-solid fa-martini-glass-citrus"></i> Taça de Gin__________R$35,00</p>
+          <p class="ingredientes">Gin, Água Tônica ou Red Bull de Melancia, Tropical ou Pêssego, Acompanhado de Frutas Tropicais</p>
+          <button class="adicionar" data-nome="Taça de Gin" data-preco="35.00">Adicionar item</button>
+                  </div>
+      </div>
+      <div class="div_subclasses">
+        <h2 class="subtitulos"><i class="fa-solid fa-utensils"></i> Petiscos</h2>
+        <div class="item produto">
+          <p>Batata Frita__________R$35,00</p>
+          <p class="ingredientes">Batata Frita, Cheddar e Bacon</p>
+          <button class="adicionar" data-nome="Batata Frita" data-preco="35.00">Adicionar item</button>
+                  </div>
+        <div class="item produto">
+          <p>Anéis de Cebola__________R$30,00</p>
+          <p class="ingredientes">Anéis de Cebola e Maionese Especial da Casa</p>
+          <button class="adicionar" data-nome="Anéis de Cebola" data-preco="30.00">Adicionar item</button>
+                  </div>
+      </div>
+      <div class="div_subclasses">
+        <h2 class="subtitulos"><i class="fa-solid fa-ice-cream"></i> Sobremesas</h2>
+        <div class="item produto">
+          <p>Brownie__________R$15,00</p>
+          <p class="ingredientes">Brownie de Chocolate, Morango e Chantilly</p>
+          <button class="adicionar" data-nome="Brownie" data-preco="15.00">Adicionar item</button>
+                  </div>
+        <div class="item produto">
+          <p>Sorvete__________R$15,00</p>
+          <p class="Sabores">Chocolate, Morango e Creme</p>
+          <button class="adicionar" data-nome="Sorvete" data-preco="15.00">Adicionar item</button>
+                </div>
+      </div> <!-- Fechamento da div .div_subclasses -->
+      <div class="div_subclasses">
+        <h2 class="subtitulos"><i class="fa-solid fa-bottle-droplet"></i> Não Alcoolicos</h2>
+        <div class="item produto">
+          <p>Refrigerante__________R$9,00</p>
+          <p class="Sabores">Coca Cola, Guarana e Sprite</p>
+          <button class="adicionar" data-nome="Refrigerante" data-preco="09.00">Adicionar item</button>
+                  </div>
+        <div class="item produto">
+          <p>Agua Mineral__________R$6,00</p>
+          <p class="Sabores">Com gas e sem gas</p>
+          <button class="adicionar" data-nome="Agua" data-preco="06.00">Adicionar item</button>
+                  </div> <!-- Fechamento da div .div_subclasses -->
+    </div>
+    <h2 class="subtitulos">Pedido</h2>
+  <ul id="pedido"></ul> <!-- Aqui serão exibidos os itens do pedido -->
+  <p id="total"></p> <!-- Aqui será exibido o total do pedido -->
+  <button id="finalizar-pedido" class="finalizar-pedido">Finalizar Pedido</button>
+  <input type="text" id="nome" placeholder="Digite seu nome">
+  </body>
+</html>
